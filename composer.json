@@ -1,0 +1,43 @@
+{
+    "name": "craftsnippets/javascript-helpers",
+    "description": "Twig tools for working with Javascript in templates",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "javascript helpers"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Piotr Pogorzelski",
+            "homepage": "http://craftsnippets.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "craftsnippets\\javascripthelpers\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Javascript helpers",
+        "handle": "javascript-helpers",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "???",
+        "components": {
+            "javascriptHelpersService": "craftsnippets\\javascripthelpers\\services\\JavascriptHelpersService"
+        },
+        "class": "craftsnippets\\javascripthelpers\\JavascriptHelpers"
+    }
+}
