@@ -26,9 +26,9 @@ Javascript helpers plugin provides two Twig variables and one filter.
 
 ### Twig variables
 
-* `craft.jsHelpers.getMessages()` - returns all static message translations as Twig array. By default it returns them for current sites locale, but you can pass specific locale code as paramater to overwrite it.
+* `craft.jsHelpers.getMessages('locale_code')` - returns all static message translations as Twig array. By default it returns them for current sites locale, but you can pass specific locale code as optional paramater to overwrite it.
 
-* `craft.jsHelpers.outputMessages('array_name', 'locale_code')` - outputs static message translations into Template as Javascript array. First parameter specifies Javascript array name. By default static message translations are returned for current sites locale, but you can pass specific locale code as second paramater to overwrite it.
+* `craft.jsHelpers.outputMessages('array_name', 'locale_code')` - outputs static message translations into Template as Javascript array. First parameter specifies Javascript array name. By default static message translations are returned for current sites locale, but you can pass specific locale code as optional second paramater to overwrite it.
 
 ### Twig filters
 
