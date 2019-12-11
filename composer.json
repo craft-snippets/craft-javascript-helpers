@@ -2,7 +2,7 @@
     "name": "craftsnippets/javascript-helpers",
     "description": "Twig tools for working with Javascript in templates",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "keywords": [
         "craft",
         "cms",

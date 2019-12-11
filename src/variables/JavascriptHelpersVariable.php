@@ -26,10 +26,7 @@ class jsHelpers
     public function outputMessages($variable_name, $language_code = null)
     {
         $messages = JavascriptHelpers::getInstance()->service->loadMessages($language_code);
-        $messages_json = json_encode($messages);
-        $js_declaration = 'var '.$variable_name.' = '.$messages_json.';';
-        $raw_declaration = TemplateHelper::raw($js_declaration);
-        return $raw_declaration;
+        Craft::$app->getView()->registerJsVar($variable_name, $messages, craft\web\View::POS_END);
     }
 
     public function getMessages($language_code = null)

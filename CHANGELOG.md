@@ -7,3 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## 1.0.0 - 2019-09-22
 ### Added
 - Initial release
+
+## 1.1.0 - 2019-12-11
+### Changed
+- The plugin now uses registerJsVar function to append Javascript code to end of HTML body tag.

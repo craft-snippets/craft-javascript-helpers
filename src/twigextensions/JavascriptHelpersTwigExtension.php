@@ -49,8 +49,6 @@ class JavascriptHelpersTwigExtension extends \Twig_Extension
         if(!is_string($variable_name)){
             throw new Exception('Variable name must be a string.');
         }
-        $json = json_encode($twig_variable);
-        $js_declaration = 'var '.$variable_name.' = '.$json.';';
-        return TemplateHelper::raw($js_declaration);
+        Craft::$app->getView()->registerJsVar($variable_name, $twig_variable, craft\web\View::POS_END);
     }
 }
