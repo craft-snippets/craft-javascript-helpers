@@ -2,7 +2,7 @@
     "name": "craftsnippets/javascript-helpers",
     "description": "Twig tools for working with Javascript in templates",
     "type": "craft-plugin",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "keywords": [
         "craft",
         "cms",
@@ -11,8 +11,8 @@
         "javascript helpers"
     ],
     "support": {
-        "docs": "???",
-        "issues": "???"
+        "docs": "https://github.com/craft-snippets/craft-javascript-helpers/blob/master/README.md",
+        "issues": "https://github.com/craft-snippets/craft-javascript-helpers/issues"
     },
     "license": "MIT",
     "authors": [
