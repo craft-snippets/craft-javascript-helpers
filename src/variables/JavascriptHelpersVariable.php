@@ -20,7 +20,7 @@ use craft\helpers\Template as TemplateHelper;
  * @package   JavascriptHelpers
  * @since     1.0.0
  */
-class jsHelpers
+class JavascriptHelpersVariable
 {
 
     public function outputMessages($variable_name, $language_code = null)

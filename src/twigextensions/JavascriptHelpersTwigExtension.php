@@ -15,13 +15,15 @@ use craftsnippets\javascripthelpers\JavascriptHelpers;
 use Craft;
 use craft\helpers\Template as TemplateHelper;
 use Exception;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
 /**
  * @author    Piotr Pogorzelski
  * @package   JavascriptHelpers
  * @since     1.0.0
  */
-class JavascriptHelpersTwigExtension extends \Twig_Extension
+class JavascriptHelpersTwigExtension extends AbstractExtension
 {
     // Public Methods
     // =========================================================================
@@ -40,7 +42,7 @@ class JavascriptHelpersTwigExtension extends \Twig_Extension
     public function getFilters()
     {
         return [
-            new \Twig_SimpleFilter('jsVar', [$this, 'jsVarFunction']),
+            new TwigFilter('jsVar', [$this, 'jsVarFunction']),
         ];
     }
 

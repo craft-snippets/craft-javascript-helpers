@@ -10,7 +10,7 @@
 
 namespace craftsnippets\javascripthelpers;
 
-use craftsnippets\javascripthelpers\variables\jsHelpers;
+use craftsnippets\javascripthelpers\variables\JavascriptHelpersVariable;
 use craftsnippets\javascripthelpers\twigextensions\JavascriptHelpersTwigExtension;
 
 use Craft;
@@ -46,7 +46,7 @@ class JavascriptHelpers extends Plugin
     /**
      * @var string
      */
-    public $schemaVersion = '1.0.0';
+    public string $schemaVersion = '1.0.0';
 
     // Public Methods
     // =========================================================================
@@ -61,10 +61,9 @@ class JavascriptHelpers extends Plugin
 
         Craft::$app->view->registerTwigExtension(new JavascriptHelpersTwigExtension());
 
-
-    $this->setComponents([
-        'service' => \craftsnippets\javascripthelpers\services\JavascriptHelpersService::class,
-    ]);
+        $this->setComponents([
+            'service' => \craftsnippets\javascripthelpers\services\JavascriptHelpersService::class,
+        ]);
 
         Event::on(
             CraftVariable::class,
@@ -72,7 +71,7 @@ class JavascriptHelpers extends Plugin
             function (Event $event) {
                 /** @var CraftVariable $variable */
                 $variable = $event->sender;
-                $variable->set('jsHelpers', jsHelpers::class);
+                $variable->set('jsHelpers', JavascriptHelpersVariable::class);
             }
         );
 
