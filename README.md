@@ -1,10 +1,10 @@
-# Javascript helpers plugin for Craft CMS 4.x
+# Javascript helpers plugin for Craft CMS 5.x
 
 This plugin allows you to output all static translation messages into Javascript object and to easily transfer any Twig variables into Javascript.
 
 ## Requirements
 
-This plugin requires Craft CMS 4.0.0 or later.
+This plugin requires Craft CMS 5.0.0 or later.
 
 ## Installation
 
@@ -46,4 +46,8 @@ Hint: you can also achieve the same effect without this plugin, by using
 {% do view.registerJsVar('some_js_variable', someTwigVariable, POS_END) %}
 ```
 
+## Disclaimer
+
 Brought to you by [Piotr Pogorzelski](http://craftsnippets.com)
+
+Plugin icon by [Benjamin J sperry](https://iconscout.com/free-icon/javascript-15).
